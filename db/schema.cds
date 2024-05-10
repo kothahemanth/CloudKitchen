@@ -18,3 +18,31 @@ entity Kitchen: managed, cuid {
     @title:'Phone Number'
     ph_no:String(10);
 }
+
+entity Staff : cuid, managed {
+    @title: 'Staff ID'
+    staff_id : String(10);
+    @title: 'Staff Name'
+    staff_name: String(20);
+    @title: 'Staff Image'
+    staff_img: String default 'https://imgur.com/djS2boy.jpg';
+    @title: 'Designation'
+    staff_des: String(30);
+    @title: 'Salary'
+    staff_sal: Integer;
+    @title: 'Staff Age'
+    staff_age: Integer;
+}
+
+entity Food : cuid, managed {
+    @title: 'Dish ID'
+    dish_id: String(10);
+    @title: 'Dish Name'
+    dish_name: String(20);
+    @title: 'Dish Image'
+    dish_img: String default 'https://imgur.com/djS2boy.jpg';
+    @title: 'Price'
+    dish_price: String(30);
+    @title: 'Preparation Time'
+    dish_time: Integer;
+}
