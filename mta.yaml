@@ -34,7 +34,7 @@ modules:
       stack: cflinuxfs4
       keep-existing-routes: true
       disk-quota: 2048M
-      memory: 256Ms
+      memory: 256M
     requires:
       - name: srv-api
         group: destinations
