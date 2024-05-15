@@ -7,6 +7,7 @@
   "private": true,
   "dependencies": {
     "@cap-js/postgres": "^1.7.0",
+    "@sap/approuter": "^16.4.2",
     "@sap/cds": "^7",
     "@sap/xssec": "^3",
     "express": "^4",
