@@ -15,10 +15,12 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1.6.0",
-    "@sap/cds-dk": "^7.9.1"
+    "@sap/cds-dk": "^7.9.1",
+    "@sap/ux-specification": "^1.120.10"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-kitchen": "cds watch --open kitchen/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -30,5 +32,8 @@
       },
       "auth": "xsuaa"
     }
-  }
+  },
+  "sapux": [
+    "app/kitchen"
+  ]
 }
