@@ -1,9 +1,13 @@
 using { com.hemanth.satinfotech as db } from '../db/schema';
 
-service satinfotech {
-    entity Kitchen as projection on db.Kitchen;
-    entity Staff as projection on db.Kitchen;
-    entity Food as projection on db.Kitchen;
+service satinfotech @(requires:'authenticated-user') {
+    entity Kitchen @(restrict: [
+        {grant: ['READ'], to : 'CloudKitchenRead'},
+        {grant: ['WRITE'], to : 'CloudKitchenWrite'},
+        {grant: ['DELTE'], to: 'CloudKitchenDelete'}
+    ])as projection on db.Kitchen;
+    entity Staff as projection on db.Staff;
+    entity Food as projection on db.Food;
 }
 
 annotate satinfotech.Kitchen with @odata.draft.enabled;

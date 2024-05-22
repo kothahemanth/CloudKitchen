@@ -1,8 +1,16 @@
 {
   "scopes": [
     {
-      "name": "$XSAPPNAME.CloudKitchenAdmin",
-      "description": "CloudKitchenAdmin"
+      "name": "$XSAPPNAME.CloudKitchenWrite",
+      "description": "CloudKitchen Create/Update"
+    },
+    {
+      "name": "$XSAPPNAME.CloudKitchenRead",
+      "description": "CloudKitchenRead"
+    },
+    {
+      "name": "$XSAPPNAME.CloudKitchenDelete",
+      "description": "CloudKitchenDelete"
     }
   ],
   "attributes": [],
@@ -11,7 +19,16 @@
       "name": "CloudKitchenAdmin",
       "description": "Role for Administration of CloudKitchen",
       "scope-references": [
-        "$XSAPPNAME.CloudKitchenAdmin"
+        "$XSAPPNAME.CloudKitchenWrite",
+        "$XSAPPNAME.CloudKitchenRead",
+        "$XSAPPNAME.CloudKitchenDelete"
+      ]
+    },
+    {
+      "name": "CloudKitchenRead",
+      "description": "Role for Administration of CloudKitchen",
+      "scope-references": [
+        "$XSAPPNAME.CloudKitchenRead"
       ]
     }
   ],
