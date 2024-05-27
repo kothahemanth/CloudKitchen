@@ -1,2 +1,2 @@
 
-using from './kitchen/annotations';
+using from './project1/annotations';

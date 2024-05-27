@@ -1,15 +1,15 @@
 sap.ui.require(
     [
         'sap/fe/test/JourneyRunner',
-        'com/hemanth/satinfotech/kitchen/test/integration/FirstJourney',
-		'com/hemanth/satinfotech/kitchen/test/integration/pages/KitchenList',
-		'com/hemanth/satinfotech/kitchen/test/integration/pages/KitchenObjectPage'
+        'com/satinfotech/hemanth/project1/test/integration/FirstJourney',
+		'com/satinfotech/hemanth/project1/test/integration/pages/KitchenList',
+		'com/satinfotech/hemanth/project1/test/integration/pages/KitchenObjectPage'
     ],
     function(JourneyRunner, opaJourney, KitchenList, KitchenObjectPage) {
         'use strict';
         var JourneyRunner = new JourneyRunner({
             // start index.html in web folder
-            launchUrl: sap.ui.require.toUrl('com/hemanth/satinfotech/kitchen') + '/index.html'
+            launchUrl: sap.ui.require.toUrl('com/satinfotech/hemanth/project1') + '/index.html'
         });
 
        

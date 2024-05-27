@@ -30,13 +30,6 @@
       "scope-references": [
         "$XSAPPNAME.CloudKitchenRead"
       ]
-    },
-    {
-      "name": "CloudKitchenDelete",
-      "description": "Role for Administration of CloudKitchen",
-      "scope-references": [
-        "$XSAPPNAME.CloudKitchenDelete"
-      ]
     }
   ],
   "oauth2-configuration": {
