@@ -20,7 +20,8 @@
       "description": "Role for Administration of CloudKitchen",
       "scope-references": [
         "$XSAPPNAME.CloudKitchenWrite",
-        "$XSAPPNAME.CloudKitchenRead"
+        "$XSAPPNAME.CloudKitchenRead",
+        "$XSAPPNAME.CloudKitchenDelete"
       ]
     },
     {
