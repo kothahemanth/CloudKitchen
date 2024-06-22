@@ -16,7 +16,8 @@ entity Products as projection on productapi.A_Product{
     Product, 
     ProductType,
     BaseUnit,
-    ProductGroup
+    ProductGroup,
+    null as ProductDescription: String(80)
 }
 }
 annotate satinfotech.Kitchen with @odata.draft.enabled;

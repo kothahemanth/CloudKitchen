@@ -6,17 +6,16 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@cap-js/postgres": "^1.7.0",
+    "@cap-js/postgres": "^1.7.2",
     "@sap-cloud-sdk/http-client": "^3.15.0",
     "@sap-cloud-sdk/resilience": "^3.15.0",
-    "@sap/approuter": "^16.4.2",
     "@sap/cds": "^7",
     "@sap/xssec": "^3",
     "express": "^4",
-    "make": "^0.8.1"
+    "passport": "^0"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1.6.0",
+    "@cap-js/sqlite": "^1",
     "@sap/cds-dk": "^7.9.1",
     "@sap/ux-specification": "^1.120.11",
     "rimraf": "^3.0.2"
