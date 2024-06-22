@@ -17,6 +17,7 @@ entity Products as projection on productapi.A_Product{
     ProductType,
     BaseUnit,
     ProductGroup,
+    to_Description,
     null as ProductDescription: String(80)
 }
 }
