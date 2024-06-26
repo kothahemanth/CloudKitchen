@@ -47,10 +47,20 @@ entity Food : cuid, managed {
     dish_time: Integer;
 }
 
-entity ProductLocal: managed {
+entity ProductLocal:  managed {
+
+    @title: 'Product ID'
+    @readonly
     key Product: String(40);
+    @title:'Product Type'
+    @readonly
     ProductType: String(4);
+    @readonly
+    @title: 'Base Unit'
     BaseUnit: String(3);
+    @readonly
+    @title: 'Product Group'
     ProductGroup: String(18);
+    @title: 'Product Description'
     ProductDescription: String(40);
 }
