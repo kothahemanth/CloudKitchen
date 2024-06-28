@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'com.hemanth.satinfotech.product',
+            appId: 'project2',
             componentId: 'ProductLocalList',
             contextPath: '/ProductLocal'
         },

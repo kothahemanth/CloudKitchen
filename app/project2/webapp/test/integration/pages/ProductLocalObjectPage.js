@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
 
     return new ObjectPage(
         {
-            appId: 'com.hemanth.satinfotech.product',
+            appId: 'project2',
             componentId: 'ProductLocalObjectPage',
             contextPath: '/ProductLocal'
         },

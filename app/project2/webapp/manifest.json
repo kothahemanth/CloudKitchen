@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "com.hemanth.satinfotech.product",
+    "id": "project2",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.12.2",
-      "toolsId": "a22161d5-ac54-45aa-9aa3-183e9bc6d5a1"
+      "toolsId": "735a110e-65ac-4a13-80a2-7ed51e0f1e41"
     },
     "dataSources": {
       "mainService": {
@@ -61,7 +61,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.hemanth.satinfotech.product.i18n.i18n"
+          "bundleName": "project2.i18n.i18n"
         }
       },
       "": {

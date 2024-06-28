@@ -25,7 +25,7 @@
     "undeploy": "cf undeploy CloudKitchen --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
     "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
-    "watch-product": "cds watch --open product/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-project2": "cds watch --open project2/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -59,6 +59,6 @@
   },
   "sapux": [
     "app/project1",
-    "app/product"
+    "app/project2"
   ]
 }
