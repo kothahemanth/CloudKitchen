@@ -9,6 +9,7 @@ modules:
   requires:
   - name: postgres
   - name: CloudKitchen-auth
+  - name: CloudKitchen-dest
   provides:
   - name: srv-api
     properties:
@@ -17,6 +18,7 @@ modules:
     buildpack: nodejs_buildpack
   build-parameters:
     builder: npm
+
 - name: CloudKitchen
   type: approuter.nodejs
   path: app/
@@ -40,6 +42,8 @@ modules:
     keep-existing-routes: true
     memory: 256M
     stack: cflinuxfs4
+
+
 - name: CloudKitchen-postgres-deployer
   type: nodejs
   path: gen/pg
@@ -52,6 +56,7 @@ modules:
     tasks:
     - command: npm start
       name: deploy-to-postgresql
+
 - name: CloudKitchen-app-content
   type: com.sap.application.content
   path: .
@@ -66,6 +71,7 @@ modules:
       - comsatinfotechhemanthproject1.zip
       name: comsatinfotechhemanthproject1
       target-path: resources/
+
 - name: comsatinfotechhemanthproject1
   type: html5
   path: app/project1
@@ -76,6 +82,8 @@ modules:
     - npm install
     - npm run build:cf
     supported-platforms: []
+
+
 resources:
 - name: postgres
   type: org.cloudfoundry.managed-service
@@ -91,6 +99,7 @@ resources:
     path: ./xs-security.json
     service: xsuaa
     service-plan: application
+
 - name: CloudKitchen-dest
   type: org.cloudfoundry.managed-service
   parameters:
@@ -107,12 +116,14 @@ resources:
           existing_destinations_policy: update
     service: destination
     service-plan: lite
+
 - name: CloudKitchen-repo-host
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
     service-name: CloudKitchen-html5-srv
     service-plan: app-host
+
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true
